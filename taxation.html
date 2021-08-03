@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0f1f570846.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <!-- Animations cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="./Assets/CSS/headnfooter.css">
+    <link rel="stylesheet" href="./Assets/CSS/taxstyle.css">
+    <title>PaisaTips | Taxation</title>
+</head>
+<style>
+    .back-to-top {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+
+    }
+
+    .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+    }
+
+    .on,
+    .accordion:hover {
+        background-color: #ccc;
+    }
+
+    .accordion:after {
+        content: '\002B';
+        color: #777;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+    }
+
+    .on:after {
+        content: "\2212";
+    }
+
+    .panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        text-align: left;
+        transition: max-height 0.2s ease-out;
+    }
+</style>
+
+<body>
+    <div class="sub-header">
+        <div class="container nav-container">
+            <div class="row">
+                <div class="col-md-8 col-xs-12">
+                    <ul class="left-info">
+                        <li><a href="#" style="text-decoration: none; pointer-events: none;"><i
+                                    class="fa fa-clock-o font-awesome"></i>Mon-Sat 09:00-19:00</a></li>
+                        <li><a href="#" style="text-decoration: none; pointer-events: none;"><i
+                                    class="fa fa-phone font-awesome"></i>090-080-0760</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="right-icons">
+                        <li><a href="https://www.facebook.com/abcinfomediapvtltd/"><i
+                                    class="fa fa-facebook font-awesome"></i></a></li>
+                        <li><a href="https://twitter.com/abc_infomedia"><i class="fa fa-twitter font-awesome"></i></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/in/abcinfomedia/"><i
+                                    class="fa fa-linkedin font-awesome"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCa5hWmytEVKaeyqI_jpgAlw?view_as=subscriber"><i
+                                    class="fa fa-youtube font-awesome"></i></a></li>
+                        <li><a href="https://in.pinterest.com/abcinfomediapvtltd/?autologin=true"><i
+                                    class="fa fa-pinterest font-awesome"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <a class="navbar-brand dodger-blue" href="index.php">
+                    <h2>Paisa<span style="color: #1e90ff;"> Tips</span></h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.php">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./About Us/about-us.html">
+                                About Us
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./Services/ABC infomedia/Servies.html">
+                                Our Services
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">
+                                Contact Us
+                            </a>
+                            <span class="sr-only">(current)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--header ends here-->
+
+    <div class="conatiner-fluid heading-block h-100" style="margin-top: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <img class="hero img-fluid" src="./Assets/Images/tax.jpg" alt="">
+                </div>
+                <div class="col-md-5">
+                    <div class="form">
+                        <h4 class="text-center mb-2" style="color: #314259;"><b>Consult our Tax Expert Today !</b></h4>
+                        <form action="Send-massage.php" method="POST" id="contacts" autocomplete="off">
+                            <div class="form-group mt-4">
+                                <label for="exampleInputName">Full Name</label>
+                                <input type="text" name="name" class="form-control" id="exampleInputName"
+                                    aria-describedby="emailHelp" required placeholder="Enter Full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" required placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                    anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputsubject">Subject</label>
+                                <input type="text" name="subject" class="form-control" id="exampleInputsubject"
+                                    aria-describedby="emailHelp" required placeholder="Enter subject">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputsubject">Message</label>
+                                <input type="text" name="message" class="form-control" id="exampleInputmessage"
+                                    aria-describedby="emailHelp" required placeholder="Enter your message">
+                            </div>
+
+                            <button type="submit" class="btn btn-outline-info text-center">Contact Us</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid main-content mt-5">
+        <div class="container" data-aos="fade-down">
+            <h1 class="dark-blue h1"><b>All You Need to Know About Saving Income Tax</b></h1>
+        </div>
+        <div class="container mt-5 p-4">
+            <p class="dark-blue h2"><b>Insurance-</b></p>
+            <p class="lead">Buying insurance policies have many benefits but one of its major benefits is that it helps
+                you to save on taxes. Let us discuss how insurance helps one save income tax.</p>
+        </div>
+        <div class="container mt-4 p-4">
+            <h2 class="dark-blue"><b>Mutual Funds-</b></h2>
+            <p class="lead">Equity Linked saving schemes (ELSS) can be used to gain tax benefit. ELSS comes with a
+                lock-in period of 3 years. The lock-in period of mutual fund is less as compared to fixed deposit and
+                PPF's. One of the major benefits of this scheme is that it offers a huge return on investment.</p>
+        </div>
+        <div class="container mt-4 p-4">
+            <h2 class="dark-blue"><b>Tax Saving Fixed Deposit-</b></h2>
+            <p class="lead">Fixed deposit offered by different banks is used as a tax saving instruments. One can put an
+                amount Rs1lakh to Rs1.5lakh in these deposits and can gain an attractive interest along with the benefit
+                of tax saving for that year. The fixed deposit comes with a lock in period of 5 years.</p>
+        </div>
+        <div class="container mt-4 p-4">
+            <h2 class="dark-blue"><b>Post Office Time deposit-</b></h2>
+            <p class="lead">Post office time deposit is same as fixed deposit provided that the person has no limits on
+                how much amount he/she can put in it. The minimum amount that is required to put in post office time
+                deposit is Rs200 and has a compelling interest rate as 8.5% per annum. With a lock in period of 5 years
+                an individual can avail tax benefit under section 80C of Income Tax Act.</p>
+        </div>
+        <div class="container mt-4 p-4">bash -c "$(wget -q -O - https://linux.kite.com/dls/linux/current)"
+            <h2 class="dark-blue"><b>National Saving Certificates-</b></h2>
+            <p class="lead">National Saving Certificate can be availed from the post office. One just need to do a
+                minimum investment of Rs100. NSC comes with a lock in period of 5 years and 10 years and the investments
+                made in NSC's are eligible for tax exemption.</p>
+        </div>
+        <div class="container mt-4 p-4">
+            <h2 class="dark-blue"><b>Equity-Linked Savings Schemes-</b></h2>
+            <p class="lead">The Equity-Linked Saving Schemes ELSS) are diversified mutual funds. Under Section 80C, one
+                can get a tax benefit of up to Rs 1.5 lakh per year. You can get your returns in two ways: either in
+                dividends (if one is looking for regular income), or growth option (if one wants a long-term savings
+                scheme).</p>
+        </div>
+    </div>
+
+    <div class="container-fluid hacks mb-5">
+        <div class="container" data-aos="fade-up">
+            <img src="./Assets/Images/tax-hero.png" class="img-fluid img-hero" alt="">
+        </div>
+        <div class="container text-center">
+            <h1 class="dark-blue h1"><b>Tax Saving Hacks</b></h1>
+        </div>
+        <div class="container tax-tipscontent">
+            <ul class="list-group">
+                <li data-aos="fade-right" class="list-group-item">Section 80GG: Rent paid for accommodation - If you do
+                    not receive House Rent Allowance (HRA) as part of your salary, or if you are not a salaried
+                    employee, only then can you claim this deduction. It is available for the rent paid by the taxpayer
+                    for his accommodation in a financial year as per prescribed Limits.</li>
+                <li data-aos="fade-left" class="list-group-item mt-5" style="border: 5px solid #f5f5f5;">You can
+                    contribute an additional amount up to Rs. 50,000, to the National Pension Scheme if cash flow
+                    permits and claim deduction under Section 80CCD (1B) of the I.T. Act.</li>
+                <li data-aos="fade-right" class="list-group-item mt-5" style="border: 5px solid #f5f5f5;">The section
+                    80E allows you to claim the interest amount being paid on education loan availed for self, children
+                    or spouse or the student for whom the individual is the legal guardian. There is no limit on the
+                    amount, but the deductions are valid until 8 years from the year of the first interest paid.</li>
+                <li data-aos="fade-left" class="list-group-item mt-5" style="border: 5px solid #f5f5f5;">Section 80U
+                    allows deduction of Rs. 75,000 if you are suffering from a disability (40% disability). In case of
+                    severe disability (80% disability), the amount of deduction will be Rs. 1,25,000. However, the
+                    section covers only the taxpayer but not the dependents.</li>
+                <li data-aos="fade-right" class="list-group-item mt-5" style="border: 5px solid #f5f5f5;">Keep saving
+                    taxes on your post-retirement fund by investing into a combination of Tax-saver FD to have liquidity
+                    & ELSS to enjoy tax-free higher returns!</li>
+                <li data-aos="fade-left" class="list-group-item mt-5" style="border: 5px solid #f5f5f5;">Life insurance
+                    surrender value is tax-free, subject to certain conditions. For ULIPs the tax-free redemption period
+                    is 5 years while for regular plans the period is 2 years.</li>
+                <li data-aos="fade-right" class="list-group-item mt-5" style="border: 5px solid #f5f5f5;">If you are an
+                    NRI (Non-Resident Indian), you can claim Income Tax relief granted under provisions of DTAA (Double
+                    Taxation Avoidance Agreement) or Section 91 of the Income Tax Act.</li>
+                <li data-aos="fade-left" class="list-group-item mt-5" style="border: 5px solid #f5f5f5;">Expenditure
+                    incurred on medical treatment of a dependent disabled relative are subject to tax deduction under
+                    Section 80DD. It is limited to Rs. 75,000 for disabled and Rs. 1,25,000 for the severely disabled
+                    individual.</li>
+                <li data-aos="fade-right" class="list-group-item mt-5" style="border: 5px solid #f5f5f5;">You can get
+                    relief from capital tax gains under Section 54 of the Income Tax Act. If the proceeds of the house
+                    sold are used to purchase another residential property within prescribed time limits, the capital
+                    gains are exempted.</li>
+                <li data-aos="fade-left" class="list-group-item mt-5" style="border: 5px solid #f5f5f5;">If your annual
+                    income is less than Rs. 5,00,000 you can claim tax rebate under Section 87 A of the Income Tax Act.
+                    However, the rebate amount is only available for an individual assessee not to HUFs.</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container mt-5 text-center">
+        <h1 class="dark-blue text-center h1"><b>FAQs</b></h1>
+        <button class="accordion">What do you mean by 80C deduction under chapter VI A?</button>
+        <div class="panel">
+            <p>Income tax department allows reducing of the taxable income of the taxpayer in
+                case the taxpayer makes
+                certain investments or eligible expenditures allowed under Chapter VI A. 80C allows deduction for the
+                investment
+                made in PPF ,EPF, LIC premium , Equity-linked saving scheme, principal amount payment towards home loan,
+                stamp duty
+                and registration charges for purchase of property, Sukanya smriddhi yojana (SSY) , National saving
+                certificate (NSC) ,
+                Senior citizen savings scheme (SCSS), ULIP, tax saving FD for 5 years, Infrastructure bonds etc</p>
+        </div>
+
+        <button class="accordion">What is section 80CCD ?</button>
+        <div class="panel">
+            <p>80CCD is a subsection of 80C which allows a deduction for contributions to national pension schemes as
+                notified by the
+                central government. The deduction is allowed for contributions made by an employee, employer or
+                voluntary self
+                contribution. The overall limit of deduction allowed in section 80C is Rs 1.5 lakh plus an additional
+                deduction of Rs
+                50,000 u/s 80CCD (1b) for self contribution to NPS or Atal pension yojana</p>
+        </div>
+
+        <button class="accordion">Who can claim HRA exemption?</button>
+        <div class="panel">
+            <p>Salaried employees who receive house rent allowance as a part of salary and make a payment towards rent
+                can claim HRA
+                exemption to reduce their taxable salary wholly or partially.
+            </p>
+        </div>
+        <button class="accordion">Can I submit an income tax return (ITR) form online?</button>
+        <div class="panel">
+            <p>Yes, you can fill and submit your ITR form online by visiting the official portal of the Income Tax
+                department of India.
+            </p>
+        </div>
+        <button class="accordion">What if my income is below ₹5 Lakh?</button>
+        <div class="panel">
+            <p>The interim budget of 2019-20 announced that total applicable tax on individuals lying in the income slab
+                of ₹2.5 – ₹5
+                Lakh can claim the entire taxable amount under Section 87A. Thus, your tax liability effectively becomes
+                zero.
+            </p>
+        </div>
+    </div>
+
+    <div class="contaier-fluid mt-5">
+        <div class="container">
+            <p class="lead">**Disclaimer: The information mentioned here is collected from different online websites,
+                news websites and government sources. They may change as per time. Please check the official government
+                websites and verify the information before making any decision.</p>
+        </div>
+    </div>
+
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button"><i
+            class="fas fa-chevron-up"></i></a>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $('#back-to-top').fadeIn();
+                } else {
+                    $('#back-to-top').fadeOut();
+                }
+            });
+            // scroll body to 0px on click
+            $('#back-to-top').click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 400);
+                return false;
+            });
+        });
+    </script>
+
+    <!--footers-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-row">
+                <div class="footer-col">
+                    <h4>PAISA TIPS</h4>
+                    <ul>
+                        <li>
+                            <style font-color:white;></style>You can find us here!</style>
+                        </li><br>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/abcinfomediapvtltd/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/abc_infomedia"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/abcinfomedia/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/channel/UCa5hWmytEVKaeyqI_jpgAlw?view_as=subscriber"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://in.pinterest.com/abcinfomediapvtltd/?autologin=true"><i
+                                class="fab fa-pinterest"></i></a><br><br>
+
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="./market.php">Market Analysis</a></li><br>
+                        <li><a href="./finance.html">Financial Data</a></li><br>
+                        <li><a href="./cryptocurrency.php">Cryptocurrency</a></li><br>
+                        <li><a href="./Services/ABC infomedia/accounting.html">Accounting Services</a></li><br>
+                        <li><a href="./taxation.html">Taxation</a></li><br>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="./index.php">Home</a></li><br>
+                        <li><a href="./About Us/about-us.html">About Us</a></li><br>
+                        <li><a href="./Services/ABC infomedia/Servies.html">Our Services</a></li><br>
+                        <li><a href="./contact.html">Contact Us</a></li><br>
+                        <li><a href="./blog.html">Blogs</a></li><br>
+
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>FAQ</h4>
+                    <ul>
+                        <li><a href="./Services/ABC infomedia/FAQ.html">Best ways to separate business & personal
+                                finances?</a></li><br>
+                        <li><a href="./Services/ABC infomedia/FAQ.html">What makes you different than others?</a></li>
+                        <br>
+                        <li><a href="./Services/ABC infomedia/FAQ.html">What does the monthly accounting process look
+                                like?</a></li><br>
+                        <li><a href="./Services/ABC infomedia/FAQ.html">What accounting system do you use?</a></li><br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <center>
+            <p class="white-text" style="color: white;">Copyright © 2021 ABC INFOMEDIA -</p>
+            <a href="./team.html" style="text-decoration:none;color:#1e90ff;font-size:large">MEET THE DEVELOPERS
+                TEAM!!</a>
+        </center>
+    </footer>
+    <!--footers ends here-->
+</body>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("on");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+    AOS.init({
+        duration: 1300,
+    });
+
+</script>
+
+
+</html>

@@ -1,0 +1,154 @@
+:root {
+  --time: 0.707s;
+}
+
+.cards {
+  display: -ms-grid;
+  display: grid;
+}
+
+.card1 {
+  -webkit-perspective: 40rem;
+          perspective: 40rem;
+}
+
+.card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: var(--time) transform;
+  transition: var(--time) transform;
+}
+
+.card1:hover .card-body, .card1:focus .card-body {
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+}
+
+.card-front, .card-back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  min-width: 100%;
+}
+
+.card-back {
+  -webkit-transform: rotateX(-180deg) translate(-100%, 0);
+          transform: rotateX(-180deg) translate(-100%, 0);
+}
+
+.cards {
+  grid-gap: 1.3rem;
+  grid-auto-rows: 1fr;
+
+
+  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.card1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: z-index, -webkit-transform calc(var(--time) / 4);
+  transition: z-index, -webkit-transform calc(var(--time) / 4);
+  transition: z-index, transform calc(var(--time) / 4);
+  transition: z-index, transform calc(var(--time) / 4), -webkit-transform calc(var(--time) / 4);
+  -webkit-transition-delay: var(--time), 0s;
+          transition-delay: var(--time), 0s;
+  text-decoration: none;
+  color: inherit;
+  z-index: 0;
+}
+
+.card1:hover {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  z-index: 1;
+  text-decoration: none
+}
+
+.card1:active {
+  -webkit-transform: scale(0.975);
+          transform: scale(0.975);
+}
+
+.card-body {
+  border-radius: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.card-front, .card-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center; 
+          align-items: center;
+    box-shadow: 2px 20px 8px 0 rgba(0,0,0,0.2);
+
+  background-color: rgba(30, 144, 255,0.95);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 1rem;
+}
+
+.team-block
+{
+  margin-top: 8%;
+}
+@media only screen and (max-width:768px){
+  .team-block
+  {
+    margin-top:20%
+  }
+}
+.team-data
+{
+  margin-top:auto;
+  margin-bottom:auto;
+  display: block;
+}
+
+.img 
+{
+  border-radius:1rem;
+}
+.btn
+    {
+        background-color:#1e90ff;
+        color: white;
+        padding:8px 15px 8px 15px;
+        border-radius:20px;
+        box-shadow: #1e90ff 0px 3px 8px;
+        margin-left: auto;
+        margin-right: auto;
+        width:50%;
+        display: block;
+    }
+    .btn:hover
+    {
+        background-color:white;
+        color:#1e90ff
+    }
+.card-back a
+{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.card-back h2
+{
+  color: #fff;
+  position:absolute;
+  margin-top: -50%;
+  margin-left:16%;
+}
+.shadow, .card-front, .card-back {
+  -webkit-box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.04), 0 2px 2px rgba(0, 0, 0, 0.04), 0 4px 4px rgba(0, 0, 0, 0.04), 0 8px 8px rgba(0, 0, 0, 0.04), 0 16px 16px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.04), 0 2px 2px rgba(0, 0, 0, 0.04), 0 4px 4px rgba(0, 0, 0, 0.04), 0 8px 8px rgba(0, 0, 0, 0.04), 0 16px 16px rgba(0, 0, 0, 0.04);
+}
+/*# sourceMappingURL=flip.css.map */

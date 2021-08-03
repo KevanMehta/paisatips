@@ -1,0 +1,632 @@
+
+html, body { overflow-x: hidden; }
+.sub-header {
+  height: 46px;
+  background-color: #1e90ff;
+}
+.nav-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+.left-info {
+  float: left;
+  margin: 5px auto;
+  padding: 0;
+}
+.right-icons {
+  float: right;
+  margin: 5px auto;
+}
+ul li a {
+  color: white;
+}
+.right-icons li a:hover {
+  color: #d3d3d3;
+  opacity: 1.5;
+}
+ul {
+  list-style: none;
+}
+ul li {
+  display: inline;
+}
+.font-awesome {
+  margin: 10px;
+}
+header {
+  position: absolute;
+  z-index: 99999;
+  width: 100%;
+  background-color: #1e1e1e;
+  height: 80px;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+header .navbar {
+  padding: 20px 0px;
+}
+.background-header .navbar {
+  padding: 10px 0px;
+}
+.background-header {
+  top: 0;
+  position: fixed;
+  background-color: #fff !important;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+.background-header .navbar-brand h2 {
+  color: #1e90ff !important;
+}
+.background-header .navbar-nav a.nav-link {
+  color: #1e1e1e !important;
+}
+.background-header .navbar-nav .nav-link:hover {
+  color: #1e90ff !important;
+}
+.navbar .navbar-brand {
+  float: left;
+  margin-top: 12px;
+  outline: none;
+}
+.navbar .navbar-brand h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.navbar .navbar-brand h2 em {
+  font-style: normal;
+  font-size: 16px;
+}
+#navbarResponsive {
+  z-index: 999;
+}
+.navbar-collapse {
+  text-align: center;
+}
+.navbar .navbar-nav .nav-item {
+  margin: 0px 15px;
+}
+.navbar .navbar-nav a.nav-link {
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  color: #fff;
+  transition: all 0.5s;
+  margin-top: 5px;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .active > .nav-link,
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link.show,
+.navbar .navbar-nav .show > .nav-link {
+  color: #1e90ff;
+  border-bottom: 3px solid #1e90ff;
+}
+.navbar .navbar-toggler-icon {
+  background-image: none;
+}
+.navbar .navbar-toggler {
+  height: 36px;
+  outline: none;
+  border-radius: 0px;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+.navbar .navbar-toggler-icon:after {
+  content: "\f0c9";
+  color: #1e90ff;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "FontAwesome";
+}
+.row {
+	 padding-right: 0px !important;
+	margin-left:0px !important;
+	margin-right:0px !important;
+}
+
+	@media only screen and (max-width: 992px){
+	header{
+		top:0;
+	}
+	.sub-header{
+		display:none;
+	}
+  .navbar .navbar-brand {
+    position: absolute;
+    left: 30px;
+    top: 10px;
+  }
+  .navbar .navbar-brand {
+    width: auto;
+  }
+  .navbar:after {
+    display: none;
+  }
+  #navbarResponsive {
+    z-index: 99999;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #1e1e1e;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  }
+  .navbar .navbar-nav .nav-item {
+    border-bottom: 1px solid #eee;
+  }
+  .navbar .navbar-nav .nav-item:last-child {
+    border-bottom: none;
+  }
+  .navbar .navbar-nav a.nav-link {
+    padding: 15px 0px;
+    color: white !important;
+  }
+  .navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .active > .nav-link, .navbar .navbar-nav .nav-link.active, .navbar .navbar-nav .nav-link.show, .navbar .navbar-nav .show > .nav-link {
+    color: #1e90ff;
+    border-bottom: 3px solid #1e90ff;
+  } 
+  
+}
+
+
+
+
+
+
+
+.market-info{
+margin-top:90px;
+}
+.img-responsive{
+width:110%;
+}
+
+.first-content{
+margin-top:15%;
+font-family:cursive;
+text-align:center;
+font-weight:bold;
+}
+.mySlides-text{
+font-size:35px;
+color:#1e90ff;
+font-family:fantasy;
+text-align:center;
+line-height:50px;
+}
+.button-main{
+background-color:blue; 
+padding:18px; 
+color:White; 
+font-weight:600; 
+font-family:emoji;
+border-radius:10px;
+font-size:20px;
+letter-spacing:1px;
+}
+.button-main:link{
+text-decoration:none;
+}
+.button-main:hover{
+color:white;
+background-color:red;
+}
+.about{
+	margin-bottom: 17px;
+    width: 100%;
+	color:black;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.types{
+	  width: 100%;
+	color:black;
+    font-size: 30px;
+    text-align: center;
+}
+.indian-stock{
+	margin-bottom:60px;
+	margin-top:50px;
+	padding: 25px;
+    background-color: white;
+    border: 2px solid #1e90ff;
+    border-radius: 15px;
+	box-shadow:1px 2px 8px 8px #888888
+}
+.clear {
+  clear: both;
+}
+.contain{
+	width: 100%;
+  text-align: center;
+}
+.main-content{
+	padding-top:50px;
+	padding-bottom:20px;
+	background-color:#1e90ff;
+}
+.share-tips{
+	 text-align: center;
+}
+.share-tips h3{
+	display: inline;
+    font-family: 'FontAwesome';
+    color: black;
+    font-size: 40px;
+    font-weight: 900;
+    border-bottom: 2px solid #1e90ff;
+}
+.market-tips{
+padding:20px;	
+border-radius: 10px;
+background-color:white;		
+}
+
+.market-tips:hover{
+	 transition: 0.4s;
+    transform: scale(1);
+    border: 2px solid #1e90ff;
+    box-shadow: 10px 10px 10px #1e90ff;
+}
+.market-tips h4{
+	color:darkblue;
+}
+.market-tips p{
+	font-size: 19px; 
+	padding-left: 60px;
+}
+.market-tips span{
+	min-width: 30px;
+    height: 30px;
+	text-align:center;
+	display:inline-block;
+	margin:5px 15px 5px;
+	color:white;	
+	background-color:#1e90ff;	
+	border-radius:50%;
+}
+
+.stock-graph{
+	margin-bottom:30px;
+	margin-top:50px;
+}
+
+
+.main-funds{
+	margin-bottom:60px;
+	margin-top:50px;
+	padding: 25px;
+    background-color: #e6f9ff;
+    border: 2px solid #333333;
+    border-radius: 15px;
+	box-shadow:1px 2px 8px 8px #888888
+}
+
+.type-funds h2{
+	color: #314259; 
+	font-family:emoji; 
+	font-weight: bolder;
+	display: inline;
+	border-bottom: 3px solid #1e90ff;
+}
+
+.why span{
+	color:black;
+	font-weight:bold;
+}
+.why{
+	margin-bottom:50px;
+	margin-top:30px;
+}
+.why-mutual-funds h2{
+	color: #314259; 
+	font-family:emoji; 
+	font-weight: bolder;
+	display: inline;
+	border-bottom: 3px solid #1e90ff;
+}
+
+.why-mutual-funds p{
+	font-size:18px;
+}
+
+
+#funds {
+	margin-bottom:50px;
+	margin-top:25px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#funds td, #funds th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#funds tr:nth-child(even){background-color: #f2f2f2;}
+
+#funds tr:hover {background-color: #ddd;}
+
+#funds th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #1e90ff;
+  color: white;
+}
+
+.cryptocurrency-info{
+	margin-top:90px;
+}
+.main-image img{
+	margin-top:20px;
+	width:100%;
+	height:70%;
+}
+
+.img-side{
+	width:100%;
+	border-radius:20px;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.img-side:hover{
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.crpto-about{
+	margin-bottom:60px;
+	padding: 25px;
+    background-color: white;
+    border: 2px solid #1e90ff;
+    border-radius: 15px;
+	box-shadow:1px 2px 8px 8px #888888
+}
+
+.about-currency{
+	margin-bottom: 17px;
+    width: 100%;
+	color:black;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.crpto-about:hover{
+	 border: 2px solid #888888;
+	box-shadow:1px 2px 8px 8px #1e90ff;
+	transition: 0.4s;
+    transform: scale(1);
+}
+
+.main-crypto{
+
+	padding-top:50px;
+	padding-bottom:20px;
+	background-color:#1e90ff;
+}
+
+
+.why-cryppto{
+	
+	margin: 13px;
+padding:20px;	
+border-radius: 10px;
+background-color:white;		
+}
+
+
+
+.why-cryppto p{
+	font-size: 19px; 
+	padding-left: 60px;
+}
+.why-cryppto span{
+	min-width: 30px;
+    height: 30px;
+	text-align:center;
+	display:inline-block;
+	margin:5px 15px 5px;
+	color:white;	
+	background-color:#1e90ff;	
+	border-radius:50%;
+}
+
+.popular{
+	 text-align: center;
+}
+.popular h3{
+	display: inline;
+    font-family: 'FontAwesome';
+    color: black;
+    font-size: 40px;
+    font-weight: 900;
+    border-bottom: 2px solid #1e90ff;
+}
+
+.why-currency{
+	float:left;
+}
+
+.invest-tips{
+	margin-top:30px;
+}
+
+.Cryptocurrency-tips{
+	padding:20px;	
+border-radius: 10px;
+background-color:white;	
+}
+
+.Cryptocurrency-tips:hover{
+ transition: 0.4s;
+    transform: scale(1);
+    border: 2px solid #1e90ff;
+    box-shadow: 10px 10px 10px #1e90ff;
+}
+
+.Cryptocurrency-tips p{
+	font-size: 19px; 
+	padding-left: 60px;
+}
+.Cryptocurrency-tips span{
+	min-width: 30px;
+    height: 30px;
+	text-align:center;
+	display:inline-block;
+	margin:5px 15px 5px;
+	color:white;	
+	background-color:#1e90ff;	
+	border-radius:50%;
+}
+
+.Safely-tips{
+	text-align:center
+}
+.Safely-tips h3{
+display: inline;
+    font-family: 'FontAwesome';
+    color: black;
+    font-size: 40px;
+    font-weight: 900;
+    border-bottom: 2px solid #1e90ff;
+}
+
+@media only screen and (max-width: 768px){
+	
+.img-responsive{
+width: 100%;
+}
+
+.about-currency
+{
+  font-size: 25px;
+}
+.crpto-about {
+  margin-top: 40px;
+}
+
+.first-content{
+	  margin-top:0px;
+  }
+.button-main{
+	
+	margin-bottom:20px;
+}
+.indian-stock{
+	margin-top:70px;
+}
+.market-tips p{
+	font-size:15px;
+}
+
+}
+
+
+@media only screen and (max-width: 992px){
+.img-responsive{
+width: 100%;
+    height: 100%;
+}
+.indian-stock{
+margin-top:50px;
+}
+
+
+}
+
+
+
+
+
+ul {
+  list-style: none;
+  margin-left: -40px;
+}
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+  color: #ffffff;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 600;
+  position: relative;
+  border-bottom: 2px solid #e91e63;
+  padding-bottom: 7px;
+  display: inline-flex;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-icons a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #1e90ff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-icons a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+

@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif
+}
+.all{
+    margin: 0 auto;
+    max-width:1140px;
+}
+body { 
+    background: url(../Images/back.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+.head h1{
+    margin-top: 3%;
+    text-align: center;
+    color: Black;
+    text-shadow: 0 2px white, 0 3px #777;
+}
+.head
+{
+    margin-top: 7%;
+}
+
+@media only screen and (max-width:768px)
+{
+ .head
+ {
+     margin-top: 30%;
+ }
+}
+.service{
+    margin-top:80px;
+}
+.container{
+    margin-top: 5px;
+    padding: 3px;
+    display:-ms-grid;
+}
+.grid-wrapper, .services-content{
+    flex-basis: 50%;
+}
+.grid-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, auto));
+    grid-gap: 2%;
+    padding: 2%;
+    animation: scaleup 6s ease-in-out infinite;
+}
+@keyframes scaleup{
+    0%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+.grid-box{
+    height: 200px;
+    padding: 1rem;
+    text-align: center;
+    border-radius:5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.438);
+}
+.grid-box h1{
+    color: whitesmoke;
+    font-weight: 500;
+}
+.circle{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    color: black;
+    padding: 12px;
+    font-size: 50px;
+    border-radius:50%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.journal{
+    background: #1E90FF;
+}
+.cashaccrual{
+    background: #1E90FF;
+    margin-top: 30px;
+}
+.ledger{
+    background: #1E90FF;
+}
+.Chart{
+    background: #1E90FF;
+    margin-top: 30px;
+}
+.service-content{
+    margin-top: 0px;
+    margin-left:5px;
+    padding: 1%;
+    position: relative;
+}
+.service-content h1{
+    font-size: 6vmin;
+    margin-bottom: 30px;
+    margin-top: 6%;
+    margin-left:6%;
+    Text-align: center;
+    text-shadow: 0 2px white, 0 3px #777;
+}
+.service-content p{
+    margin-top: 1%;
+    padding-right: 3%
+}
+
+.card1 p{
+    color: gray;
+}
+
+.circle{
+    height: 70px;
+    width: 70px;
+    background-color: lightgrey;
+    color: black;
+    padding: 12px;
+    font-size: 30px;
+    border-radius:50%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.row p{
+    text-align: left;
+    margin-left:8px;
+}
+.card1:hover .circle{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+@keyframes mymove{
+    from{left: -15px;}
+    to{left: 40px;}
+}
+ 
+
+@media only screen and (max-width:768px)
+{
+    .service-content
+    {
+        margin-top:25% ;
+    }
+}
+.services {
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+  }
+.services {
+    margin:0 auto;
+    max-width: 1140px;
+} 
+.services-heading {
+    font-weight: 500;
+  }
+.service-item:hover {
+    transform: scale(1.02);
+    box-shadow: 2px 5px 10px black;
+    transition: all 0.5s;
+  }
+.zcontainer{
+    margin-bottom: 30px;
+}
+.data-block h4{
+    text-align: center;
+    margin-top:10px;
+    font-weight:500;
+}
+.data-block{
+    padding:3px;
+    background-color: white;
+}
+.data-block p{
+    margin-left:3px;
+    margin-right:2px;
+    margin-bottom:10px;
+}
+/*tips*/
+.tips h1{
+    text-align: center;
+    text-shadow: 0 2px white, 0 3px #777;
+    margin-top:50px;
+    margin-bottom:20px;
+}
+.tcontainer {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Required to position the posts one below the other on smaller devices */
+ }
+ .post-wrap {
+    /* Existing styles here */
+    flex: 1;
+    margin: 0 15px 30px;
+    min-width: 300px;
+    max-width: 380px;
+    width: 320px;
+    height: 487px;
+    perspective: 1000px;
+ }
+ 
+ .post {
+    position: relative; /* Required to absolutely position the child faces */
+    width: 100%;
+    height: 100%;
+ }
+ .post-front, .post-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+ }
+ .post-back {
+    transform: rotateY(180deg);
+ }
+ .post-front, .post-back {
+    /* Existing styles here */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+ }
+ .post-wrap:hover .post {
+    transform: rotateY(180deg);
+ }
+ .post {
+    /* Existing styles here */
+    transition: transform 1s;
+    transform-style: preserve-3d;   
+ }
+ .post-front, .post-back {
+    /* Existing styles here */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+ }
+ /*Front card*/
+ .post-img {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+ }
+ .post-info {
+    padding: 20px 30px 30px;
+ }
+ .post-info span {
+    font-size: 20px;
+    color: black;
+ }
+ .post-info h2{
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-top: 5px;
+    color:Black;
+ }
+ /*back card*/
+ .post-back {
+    background-color: #ffffff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* To push the read more button to bottom */
+    align-items: flex-start; /* To position the read more button at the left */
+ }
+ .post-back h2{
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-top: 5px;
+ }
+ .post-back p {
+    margin-top: 10px;
+    line-height: 1.6;
+ }
+ .post-back a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #5678ba;
+    padding: 10px 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-radius: 5px;
+ }
+ 
+
+ 
+ 
+ 

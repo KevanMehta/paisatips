@@ -1,0 +1,34 @@
+https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=WMT&apikey=2Y37F9ITHK61EQON
+https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=AAPL&apikey=2Y37F9ITHK61EQON
+https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=GOOGL&apikey=2Y37F9ITHK61EQON
+https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=MCD&apikey=2Y37F9ITHK61EQON
+https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=TSLA&apikey=2Y37F9ITHK61EQON
+https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=HDFC.BSE&outputsize=full&apikey=2Y37F9ITHK61EQON
+https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=RELIANCE.BSE&outputsize=full&apikey=2Y37F9ITHK61EQON
+https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=BPCL.BSE&outputsize=full&apikey=2Y37F9ITHK61EQON
+https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=ITC.BSE&outputsize=full&apikey=2Y37F9ITHK61EQON
+https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=ONGC.BSE&outputsize=full&apikey=2Y37F9ITHK61EQON
+https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=TTM&outputsize=full&apikey=2Y37F9ITHK61EQON
+https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=UPL.BSE&outputsize=full&apikey=2Y37F9ITHK61EQON
+https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=POWERGRID.BSE&outputsize=full&apikey=2Y37F9ITHK61EQON
+https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=NTPC.BSE&outputsize=full&apikey=2Y37F9ITHK61EQON
+https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=TCS.BSE&outputsize=full&apikey=2Y37F9ITHK61EQON
+https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=NESTLEIND.BSE&outputsize=full&apikey=2Y37F9ITHK61EQON
+https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=BAJFINANCE.BSE&outputsize=full&apikey=2Y37F9ITHK61EQON
+https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=JSWSTEEL.BSE&outputsize=full&apikey=2Y37F9ITHK61EQON
+https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=TATASTEEL.BSE&outputsize=full&apikey=2Y37F9ITHK61EQON
+https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=MARUTI.BSE&outputsize=full&apikey=2Y37F9ITHK61EQON
+https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=DAI.DEX&outputsize=full&apikey=demo
+https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=INFY.BSE&outputsize=full&apikey=2Y37F9ITHK61EQON
+https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=BOSCHLTD.BSE&outputsize=full&apikey=2Y37F9ITHK61EQON
+https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=MRF.BSE&outputsize=full&apikey=2Y37F9ITHK61EQON
+https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=HDFCAMC.BSE&outputsize=full&apikey=2Y37F9ITHK61EQON
+https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=SBIN.BSE&outputsize=full&apikey=2Y37F9ITHK61EQON
+
+
+
+
+Good evening sir,
+In todays review we were to add some more content and to make some changes.
+
+I have an idea to add a list search feature in which the client can search for a company by entering it's ticker and we will be displaying the corresponding companies and he could select

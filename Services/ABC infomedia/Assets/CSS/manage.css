@@ -1,0 +1,431 @@
+
+*{
+   margin:0;
+   padding:0;
+   font-family: 'Poppins', sans-serif;
+}
+.bcontainer{
+    margin: 0 auto;
+    max-width: 1140px;
+}
+.about {
+    margin-top: 15vh;
+  }  
+  .main {
+    margin-top: 38vh;
+  }
+  
+  .content {
+    margin-left: 60vh;
+  }
+  .caption {
+    width: 28vw;
+  }
+  .left-image{
+    margin-top:5%;
+  }
+  .right-content-abt {
+    margin-top:6%;
+  }
+  .dcontainer{
+      padding:50px 0px;
+      background-color:white;
+      margin:0 auto;
+      max-width: 1140px;
+  }
+  .dcontainer h1{
+      margin-top:8%;
+      text-align:center;
+      text-shadow: 0 2px white, 0 3px #777;
+      font-weight: 500;
+  }
+  *{ 
+    transition: all 0.5 cubic-bezier(.25,.8,.25,1);
+  }
+  .paracard{
+      width: 100%;
+      display:block;
+      padding-top:4%;
+      transform-style: preserve-3d;
+      box-shadow: 0px 10px 10px rgba(0,0,0,0.25); 
+      border: 0px;
+      background-size: 110% 110%;
+      background-position: center;
+
+  }
+.dcard{
+      position:relative;
+      display:block;
+      perspective:500px;
+      border-radius:12px;
+  }
+.col-md-12, .col-md-4 {
+      margin-bottom: 30px;
+    }
+.col-md-12 .dcard {
+    perspective: 3000px;
+}
+.frame {
+    background: rgba(0,0,0,0.2); 
+    display: block; 
+    width: 100%; 
+    height: 100%;     
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.frame::after{
+    width: calc(100% - 40px); 
+    border: 2px solid rgba(255,255,255,0.5); 
+    height: calc(100% - 40px); 
+    content: ""; 
+    display: block; 
+   left: 20px; 
+   top: 20px; 
+   position: absolute; 
+   transform: translateZ(30px);
+}
+.dcard:hover .paracard .frame {
+    background: rgba(0,0,0,0.0);
+}
+.dcard:hover .paracard .frame::after{
+    border: 2px solid rgba(255,255,255,0.8)
+}
+.frame h2 {
+    color: #fff; 
+    position: absolute; 
+    bottom: 10%; 
+    left: 10%; 
+    transform: translateZ(50px); 
+    text-align: center; 
+    font-size: 24px; 
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+    }
+.trigger {
+    position: absolute; 
+    height: 33.333333%; 
+    width: 33.333333%; 
+    display: block; 
+    z-index: 2;
+}
+.trigger::nth-child(1){
+    left:0%;
+    top:0%;
+
+}
+.trigger::nth-child(1):hover ~ .paracard{
+    transform: rotateY(8deg)rotateX(-5deg);
+    background-position:top left;
+
+}
+.trigger::nth-child(2){
+    left:33.333333%;
+    top:0%;
+
+}
+.trigger::nth-child(2):hover ~ .paracard{
+    transform: rotateY(0deg) rotateX(-5deg); 
+    background-position: top center;
+}
+.trigger::nth-child(3){
+    left:66.666666%;
+    top:0%;
+
+}
+.trigger::nth-child(3):hover ~ .paracard{
+    transform: rotateY(-8deg) rotateX(-5deg); 
+    background-position: top right;
+}
+.trigger::nth-child(4){
+    left:0%;
+    top:33.333333%;
+
+}
+.trigger::nth-child(4):hover ~ .paracard{
+    transform: rotateY(8deg); 
+    background-position: center left;
+}
+.trigger::nth-child(5){
+    left:33.333333%;
+    top:33.333333%;
+
+}
+.trigger::nth-child(5):hover ~ .paracard{
+    transform: rotateY(0deg)rotateX(0deg); 
+    background-position: center center;
+}
+.trigger::nth-child(6){
+    left:66.666666%;
+    top:33.333333%;
+
+}
+.trigger::nth-child(6):hover ~ .paracard{
+    transform: rotateY(-8deg)rotateX(0deg); 
+    background-position: center right;
+}
+.trigger::nth-child(7){
+    left:0%;
+    top:66.666666%;
+
+}
+.trigger::nth-child(7):hover ~ .paracard{
+    transform: rotateY(8deg)rotateX(5deg); 
+    background-position: bottom left;
+}
+.trigger::nth-child(8){
+    left:33.333333%;
+    top:66.666666%;
+
+}
+.trigger::nth-child(8):hover ~ .paracard{
+    transform: rotateY(0deg)rotateX(5deg); 
+    background-position: bottom center;
+}
+.trigger::nth-child(9){
+    left:66.666666%;
+    top:66.666666%;
+
+}
+.trigger::nth-child(9):hover ~ .paracard{
+    transform: rotateY(-8deg)rotateX(5deg); 
+    background-position: bottom right;
+}
+@media screen and (max-width:768px) {
+    .dcontainer {
+      width: calc(62% - 4px);
+      padding-bottom: 33%;
+    }
+    .tips-block
+    {
+        margin-left: -9%;
+    }
+  }
+  
+  @media screen and (max-width:480px) {
+    .dcontainer {
+      display: block;
+      width: calc(100% - 8px);
+      padding-bottom: 2%;
+      margin: 8px 4px;
+    }
+  }
+  .service-content{
+    margin-top: 0cm;
+    margin-left:5px;
+    padding: 2%;
+    margin:0 auto;
+    max-width:1140px;
+    position: relative;
+}
+.service-content h1{
+    font-size: 6vmin;
+    margin-bottom: 30px;
+    margin-top: 6%;
+    margin-left:6%;
+    Text-align: center;
+    text-shadow: 0 2px white, 0 3px #777;
+}
+.service-content p{
+    margin-top: 1%;
+    padding-right: 3%;
+    font-size: 19px
+    
+}
+/*tips*/
+.tips h2{
+    text-align:center;
+    margin-top:8%;
+    font-weight:600;
+
+}
+.tips{
+    font-family:'poppins',sans-serif;
+    -webkit-font-smoothing:antialiased;
+    margin:0 auto;
+    max-width:1140px;
+
+}
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.property-description h5{
+    margin:2px;
+    font-size: 22px;
+    font-weight:700;
+    margin-bottom:10%;
+}
+.property-description p{
+    font-size:25px;
+    margin-top:2%;
+    font-weight:500;
+    color:#1e90ff;
+}
+.center{
+    height:300px;
+    width:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.property-card{
+    height:18em;
+    width:14em;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  position:relative;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius:16px;
+  overflow:hidden;
+  -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+}
+.property-image{
+    height:6em;
+    width:14em;
+    padding:1em 2em;
+    position:Absolute;
+    top:0px; 
+    -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+   -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+   transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+   background-image:url(../Images/new/tips.jpg);
+   background-size:cover; 
+   background-repeat:no-repeat;
+}
+.property-description
+{
+  background-color: #FAFAFC;
+  height:12em;
+  width:14em;
+  position:absolute;
+  bottom:0em;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align:center;
+}
+.property-social-icons
+{
+  width:1em;
+  height:1em;
+  background-color:black;
+  position:absolute;
+  bottom:1em;
+  left:1em;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.property-card:hover .property-description
+{
+  height:0em;
+  padding:0px 1em;
+}
+.property-card:hover .property-image
+{
+  height:18em;
+}
+.property-card:hover .property-social-icons
+{
+  background-color:white;
+}
+
+.property-card:hover .property-social-icons:hover
+{
+  background-color:#1e90ff;
+  cursor:pointer;
+}
+.property-image-title
+{
+text-align:center;
+position:Relative;
+top:30%;
+opacity:0;
+transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+color:black;
+font-size:1.2em;
+}
+.property-card:hover .property-image-title
+{
+opacity:1;
+}
+/*FAQ starts here*/
+.faq{
+    font-family:'poppins',sans-serif;
+    align-items: center;
+    box-sizing: border-box;
+}
+.faq h1{
+    text-align:center;
+    text-shadow: 0 2px white, 0 3px #779;
+    margin-top:10%;
+    margin-bottom:5%;
+}
+.accordion{
+    max-width: 700px;
+    display: block;
+    margin:100px auto;  
+}
+.accordion .card{
+    box-shadow: 0px 0px 20px #d4d4d4;
+    margin-bottom:20px; 
+}
+.accordion .card .card-header h3{
+    cursor: pointer;
+    color:#ffffff;
+    position: relative;
+    background-color: #1E90FF;
+    margin: 0;
+    padding: 15px 20px;
+
+}
+.accordion .card .card-header{
+    position: relative;
+} 
+.accordion .card .card-header span{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    height: 25px;
+    width: 25px;
+    color: #1E90FF;
+    background-color: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    font-size: 13px;
+}
+.accordion .card .card-body{
+    padding: 20px;
+}
+.accordion .card .card-body {
+    display: none;
+}
+/*open one card by default*/
+.accordion .card:nth-child(1) .card-body{
+    display: block;
+}
+.accordion .card .card-body p{
+    font-size: 15px;
+    line-height:24px;
+    color: #444444;
+    margin: 0px;
+}
+  
+
+
+
+
+
+
+
+  

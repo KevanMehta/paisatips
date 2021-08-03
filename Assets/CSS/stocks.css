@@ -1,0 +1,101 @@
+body,
+        html {
+            overflow-x: hidden;
+        }
+
+        .IT,.Products,.Automobile,.Steel,.Energy,.Finance{
+            display: none;
+            margin-left: 15%;
+            text-align: left;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            width: 80%;
+        }
+
+        #mybtn {
+            background-color:#495057;
+            margin-bottom: 1%;
+            width: 150px;
+            margin-right: 5px;
+            display: inline-block;
+            cursor: pointer;
+            color: white;
+            border-radius: 5px;
+        }
+        #mybtn:hover
+        {
+            transform: scale(1.04);
+            background-color: white;
+            color: #495057;
+            border: 1px solid #495057;
+            transition: all 0.5s;
+        }
+
+        input {
+            background-color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+        }
+
+        .chartContainer {
+            display: none;
+        }
+
+        .form-control:hover {
+            background-color: white;
+        }
+
+        input:hover {
+            background-color: #1e90ff;
+        }
+
+        .filter-container {
+            display: none;
+            margin-left: 25%;
+        }
+
+        .btn-success {
+            position: absolute;
+            left: 83%;
+            top: 37px;
+        }
+
+        .form-control {
+            display: block;
+            width: 70%;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: .25rem;
+            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+            margin-left: 24%;
+        }
+        .filter-btn
+        {
+            position: relative;
+            width:70px;
+        }
+        @media only screen and (max-width:768px) {
+            .IT,.Products,.Automobile,.Steel,.Energy,.Finance{
+                margin-left: 9%;
+                width: 90%;
+            }
+            .form-control{
+                width:65%
+            }
+            .filter-container {
+                margin-left: 10%;
+            }
+            .list-group
+            {
+                margin-top:3rem;
+            }
+            .filter-btn
+            {
+                margin-left:-40%;
+            }
+        }
